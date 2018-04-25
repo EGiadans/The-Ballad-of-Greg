@@ -29,9 +29,16 @@ namespace Completed
         //Awake is always called before any Start functions
         void Awake()
 		{
-            start = GameObject.Find("Preguntas").GetComponent<Canvas>();
-            start.enabled = true;
-            Time.timeScale = 0;
+            if (level == 1)
+            {
+                start = GameObject.Find("Preguntas").GetComponent<Canvas>();
+                start.enabled = true;
+                Time.timeScale = 0;
+            } else
+            {
+                start.enabled = false;
+            }
+            
             //Check if instance already exists
             if (instance == null)
 
