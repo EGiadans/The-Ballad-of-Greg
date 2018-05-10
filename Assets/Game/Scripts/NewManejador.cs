@@ -23,7 +23,7 @@ public class NewManejador : MonoBehaviour
     {
 
     }
-
+    //Allow the game to be played with timescale = 1
     public void BotonPresionadoStart()
     {
         Debug.Log("presiono start");
@@ -31,7 +31,7 @@ public class NewManejador : MonoBehaviour
         Time.timeScale = 1;
         
     }
-
+    //End application
     public void BotonPresionadoQuit()
     {
         Debug.Log("presiono quit");

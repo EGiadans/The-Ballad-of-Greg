@@ -24,6 +24,7 @@ public class Manejador : MonoBehaviour {
 		
 	}
 
+    //Check the answer provided for each question, once answered, continue playing
     public void BotonPresionado(bool respuesta)
     {
         player.CheckAnswer(respuesta);

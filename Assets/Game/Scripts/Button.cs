@@ -16,14 +16,14 @@ public class Button : MonoBehaviour {
 
 
     }
-
+    //Allow the game to continue when pressed
     public void BotonPresionadoStart()
     {
         Debug.Log("presiono start");
         Time.timeScale = 1;
 
     }
-
+    //Terminate application
     public void BotonPresionadoQuit()
     {
         Debug.Log("presiono quit");
