@@ -28,13 +28,11 @@ namespace Completed
 
         
 
-        string[] levelQuestions =
-        {
-            "1", "2", "3", "4", "5", "6"
-        };
+        string[] levelQuestions =System.IO.File.ReadAllLines(@"C:\Users\Eduardo\Documents\preg.txt");
+
         bool[] levelAnswers =
         {
-            true, false, true, false, true, false
+            true, false, true, false, true, false, true, false, true, false, true, false
         };
 
         int currentQuestion;
